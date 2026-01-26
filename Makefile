@@ -237,11 +237,11 @@ ${LIBDIR}libcrc${LIBEXT} :			\
 # Lookup table include file dependencies
 #
 
-${TABDIR}gentab32.inc			: ${BINDIR}prc${EXEEXT}
-	${BINDIR}prc --crc32 ${TABDIR}gentab32.inc
+${TABDIR}gentab32.inc			:
+	prc --crc32 ${TABDIR}gentab32.inc
 
-${TABDIR}gentab64.inc			: ${BINDIR}prc${EXEEXT}
-	${BINDIR}prc --crc64 ${TABDIR}gentab64.inc
+${TABDIR}gentab64.inc			:
+	prc --crc64 ${TABDIR}gentab64.inc
 
 #
 # Individual source files with their header file dependencies
