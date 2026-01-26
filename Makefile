@@ -190,7 +190,6 @@ ${BINDIR}prc${EXEEXT} :					\
 		${GENDIR}${OBJDIR}precalc${OBJEXT}	\
 		${GENDIR}${OBJDIR}crc32_table${OBJEXT}	\
 		${GENDIR}${OBJDIR}crc64_table${OBJEXT}
-	${STRIP} ${BINDIR}prc${EXEEXT}
 
 #
 # The tstcrc program can be run to calculate the CRC values of manual input or
