@@ -28,7 +28,9 @@ libcrc_lib = shared_library('crc',
   libcrc_src,
   include_directories : [libcrc_inc],
   dependencies : [gentab32_dep, gentab64_dep],
-  install : true
+  version: meson.project_version(),
+  soversion: meson.project_version().split('.')[0],
+  install : true,
 )
 
 libcrc_dep = declare_dependency(
