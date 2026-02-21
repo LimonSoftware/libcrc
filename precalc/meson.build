@@ -13,4 +13,3 @@ libcrc_precalc_dep = declare_dependency(
 
 precalc_prog = executable('prc', 'precalc.c', dependencies: libcrc_precalc_dep, install: true)
 precalc_exe = precalc_prog.full_path()
-
